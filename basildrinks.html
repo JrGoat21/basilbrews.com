@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Basil Brews - Your Destination for Delicious Drinks</title>
+	<link rel="stylesheet" type="text/css" href="basildrinks.css">
+	<style>
+		body {
+			font-family: "Open Sans", sans-serif;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="header-wrapper">
+			<a href="index.html"><img src="logo.png" width="225" height="225" alt="Basil Brews logo"></a>
+			<h1>Basil Brews</h1>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="menu.html">Menu</a></li>
+					<li><a href="about.html">Order</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<h2>Our Menu</h2>
+		<p>Order any of the following drinks for just $5.75 each:</p>
+		<ul>
+			<img src="drinks.jpg" width="560" height="420" alt=""/>
+			<li>Thai Tea</li>
+			<li>Thai Coffee</li>
+			<li>Green Thai Tea</li>
+			<li>Taro Milk</li>
+			<li>Honeydew Milk</li>
+			<li>Coconut Milk</li>
+			<li>Pink Milk</li>
+			<li>Green Milk</li>
+			<li>Mango Green Tea</li>
+			<li>Peach Green Tea</li>
+			<li>Tricolor (priced at $6.75)</li>
+		</ul>
+		
+		<section id="order">
+			<h2>Place Your Order</h2>
+			<form action="submit-order.php" method="POST">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+				<label for="phone">Phone Number:</label>
+				<input type="tel" id="phone" name="phone" optional>
+				<label for="order">Order:</label>
+				<textarea id="order" name="order" required></textarea>
+				<button type="submit">Submit Order</button>
+			</form>
+		</section>
+		
+		<p>Please note that we only accept cash payments at this time. When we receive your order, we will contact you to confirm and arrange for payment and delivery.</p>
+	</main>
+	
+	<footer>
+		<p>Contact us at <a href="mailto:basilsips@gmail.com">basilsips@gmail.com</a> for any questions or concerns.</p>
+		<p>© 2023 Basil Brews. All rights reserved. Drinks made from Basil Cafe.</p>
+	</footer>
+</body>
+</html>
+
